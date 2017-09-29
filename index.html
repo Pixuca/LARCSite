@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style type="text/css">
+        * {
+            font: 20px Arial;
+
+        }
+        body{
+            padding: 0;
+            margin:0;
+            background-color: white;
+        }
+        .logo{
+            display: inline;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .logoFei{
+            position: absolute;
+            left: 277px;
+        }
+        .logoRobo{
+            position: absolute;
+            left: 910px;
+        }
+        #menu {
+            margin: 100px auto;
+            padding: 3px 90px;
+            background-color: rgba(0, 0, 0, 0.4);
+            width: 630px;
+            height: 60px;
+            display: inline-flex;
+            text-align:center;
+            color: grey;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        a{
+            text-decoration: none;
+            justify-content: space-around;
+            transition: opacity .25s ease-in;
+            -webkit-transition: opacity .25s ease-in;
+            opacity: 0.6;
+            font-size:100%;
+            color: white;
+        }
+        a:hover{
+            opacity: 1.0;
+            transition: opacity .25s ease-in;
+            -webkit-transition: opacity .25s ease-in;
+            color: white;
+            background-color: #0079b9;
+            border-radius:5px 5px 5px 5px;
+            border-top-width: 20px;
+
+        }
+        a:visited{
+            color: white;
+        }
+        a:visited:hover{
+
+            color: white;
+            transition: opacity .25s ease-in;
+            -webkit-transition: opacity .25s ease-in;
+
+        }
+        .pai{
+            padding: 0;
+            margin: 0;
+        }
+
+        .capa{
+            position: absolute;
+            left: 270px;
+            top: 100px;
+            z-index: -1;
+        }
+        .conteudo{
+            border: 1px solid #5d5d5d;
+            top: 19.4px;
+            margin: 265px;
+            position: relative;
+            width: 60%;
+            padding:0;
+            background-color: #ffffff;
+        }
+        .conteudo h1 {
+             font:30px Helvetica,Arial,Verdana;
+             margin: 10px 20px;
+             color:#0c6fae;
+         }
+        h2{
+            font: 10px Arial;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div style="width: 980px; margin: 0 auto; overflow: hidden;">
+    <div style="float: left; width: 80%;"></div>
+    <div style="float: right; width: 20%;"></div>
+</div>
+<div class="pai">
+    <div class="logo"><img src="logofei.png" height="70px" class="logoFei"><img src="robo.png" class="logoRobo"></div>
+
+    <center>
+    <div id="menu">
+        <a href="index.html" id="home">Home</a>
+        <a href="http://www.google.com" class="google">Projects</a>
+        <a href="http://www.crypo.com" class="crypo">History</a>
+        <a href="http://www.crypo.com" class="crypo">Sponsors</a>
+        <a href="http://www.crypo.com" class="crypo">Videos</a>
+        <a href="http://www.crypo.com" class="crypo">Publications</a>
+        <a href="http://www.crypo.com" class="crypo">Awards</a>
+
+    </div></center>
+
+</div>
+<img src="capa.png" class="capa">
+
+<center><div class="conteudo">
+    <h1>News</h1>
+    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FRoboFEI%2Fvideos%2F1093933100708796%2F&show_text=1&width=560" width="560" height="496" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+    <div id="fb-root"></div>
+
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    </div></center>
+
+</body>
+</html>
